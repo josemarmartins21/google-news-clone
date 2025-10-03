@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+header {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    background-color: white;
+}
+
+header img {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+header a > img {
+    width: 140px;
+}
+
+header #top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.itens-uteis {
+    display: flex;
+    justify-content: inherit;
+    flex: 0 1 360px;
+}
+
+.card-uteis {
+    flex: 0 1 25%;
+}
+
+.card-uteis {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    gap: 10px;
+}
+
+
+nav {
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+li > a:hover {
+    color: black;
+    transition: color .3s;
+}
+
+.first:first-child:hover {
+    color: rgb(0, 140, 255);
+}
+
+nav li:first-child {
+    border-bottom: 2px solid rgb(0, 140, 255);
+    
+}
+
+.first {
+    color: rgb(0, 140, 255);
+}
+
+span {
+    color: rgba(0, 0, 0, 0.63);
+}
+
+/* Main */
+
+main {
+    max-width: 1000px;
+    min-height: 40vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    align-items: start;
+    
+}
+
+#principal, #secundaria, #topo{
+    /* border: 2px solid black; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#topo {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+#topo h2 {
+    font-weight: 400;
+    font-size: 2em;
+}
+#meteorologia {
+    flex-basis: 240px;
+    padding: 5px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#meteorologia span {
+    font-size: 14px;
+}
+
+#meteorologia strong {
+    display: block;
+}
+
+#principal, #secundaria, #meteorologia {
+    background-color: white;
+
+}
+
+#principal > h3 {
+    color: rgb(29, 108, 211);
+    font-weight: 400;
+}
+
+div.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.178);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    
+}
+
+.destaque img {
+    width: 280px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.extras h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.destaque h3 {
+    font-weight: 400;
+}
+
+.destaque {
+    flex: 1 1 250px;
+}
+
+.extras {
+    flex: 3 1 460px;
+    padding: 10px;
+}
+
+.extras > div {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
